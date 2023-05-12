@@ -24,7 +24,7 @@ export default function Home() {
 
             {/* Content */}
             <div className="Content space-y-16">
-                <section className="top relative flex flex-}row justify-center items-center w-full h-[100vh] bg-[#003566]">
+                <section className="top relative flex flex-row justify-center items-center w-full h-[100vh] bg-[#003566]">
                     <div className="absolute w-[1000px] z-10 left-16">
                         <div className="text-left text-6xl text-white font-bold ">
                             <p>Capture a picture perfect moments with <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#ff7200] to-[#ffd40b]">Quick</span><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#56aed6] to-[#064170]">Snap</span>.</p>
