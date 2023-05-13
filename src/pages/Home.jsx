@@ -43,7 +43,7 @@ export default function Home() {
                     </div>
                     <div className="Card Custom-Card">
                         <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                        <p>Formal capturing method of photos good for 1X1 and 2X2 photos</p>
+                        <p>Formal capturing method of photos good for 1×1 and 2×2 photos</p>
                     </div>
                     <div className="Card Custom-Card">
                         <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
@@ -56,8 +56,8 @@ export default function Home() {
                     <p className="w-[900px]">QuickSnap is a computer vision-based application that leverages advanced techniques such as gaze estimation, palm tracking, and smile capture to create a seamless and efficient photo-capturing experience. By utilizing these cutting-edge technologies, QuickSnap eliminates the need for users to navigate through complicated menus and settings, making the photo-taking process quick and effortless.</p>
                     <p className="text-2xl font-bold">Download QuickSnap: </p>
                     <div className="flex space-x-4">
-                        <button className="Download">Personal</button>
-                        <button className="Download">Business</button>
+                        <a className="Download" href="src/download/QuickSnap-Personal.txt" download="QuickSnap_Personal_v1.0">Personal</a>
+                        <a className="Download" href="src/download/QuickSnap-Business.txt" download="QuickSnap_Business_v1.0">Business</a>
                     </div>
                 </section>
             </div>
