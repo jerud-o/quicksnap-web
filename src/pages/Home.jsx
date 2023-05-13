@@ -11,10 +11,10 @@ export default function Home() {
     return (
         <>
             {/* Navigation */}
-            <nav className="Navbar flex flex-row justify-between items-center p-6 w-full h-24 bg-[#001D3D]">
+            <nav className="Navbar z-10 flex flex-row justify-between items-center p-6 w-full h-24 bg-[#001D3D]">
                 <div className="flex flex-row items-center">
                     <img className="QuickSnap-Logo w-auto h-16 mr-4" src="src/assets/Logo.png" alt="Logo" />
-                    <img className="QuickSnap-Banner w-auto h-10" src="src/assets/Banner.png" />
+                    <p className="text-4xl font-bold"><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#ff7200] to-[#ffd40b]">Quick</span><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#56aed6] to-[#064170]">Snap</span></p>
                 </div>
                 <div className="flex">
                     <a className="Nav-Button" onClick={scrolltoId}>Download</a>
@@ -23,32 +23,61 @@ export default function Home() {
             {/* End Navigation */}
 
             {/* Content */}
-            <div className="Content space-y-16">
-                <section className="top relative flex flex-row justify-center items-center w-full h-[100vh] bg-[#003566]">
-                    <div className="absolute w-[1000px] z-10 left-16">
-                        <div className="text-left text-6xl text-white font-bold ">
-                            <p>Capture a picture perfect moments with <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#ff7200] to-[#ffd40b]">Quick</span><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#56aed6] to-[#064170]">Snap</span>.</p>
+            <div className="Content space-y-24 overflow-hidden">
+                <section className="relative flex flex-row justify-center items-center w-full h-[100vh] ">
+                    <div className="absolute w-[900px] z-10 left-16">
+                        <div className="text-left text-6xl text-[#001D3D] font-bold ">
+                            <p>Capture a picture perfect moments with</p>
+                            <p><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#ff7200] to-[#ffd40b]">Quick</span><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#56aed6] to-[#064170]">Snap</span>.</p>
                         </div>
-                        <p className="my-6 w-[600px] text-white">Streamlining the process of taking formal and beautify photos in photo booths for students and applicants.</p>
+                        <p className="my-6 w-[600px] text-[#001D3D]">Streamlining the process of taking formal and beautify photos in photo booths for students and applicants.</p>
                     </div>
-                    <img className="absolute right-16 w-auto h-[800px]" src="src/assets/001.jpg" />
+                    <img className="absolute right-[-20px] w-auto h-[800px]" src="src/assets/img1.png" />
                 </section>
 
-                <p className="flex justify-center items-center text-5xl text-[#001D3D] font-bold">Features</p>
+                <section className="flex flex-col space-y-8">
+                    <div className="flex flex-col justify-center items-center text-[#001D3D] space-y-2">
+                        <p className=" text-5xl font-bold">QuickSnap Personal</p>
+                        <p className="text-lg font-semibold">QuickSnap Personal is goods for your own use.</p>
+                    </div>
+                    <div className="flex flex-wrap flex-row justify-center items-center space-x-6 text-center font-semibold">
+                        <div className="Card Custom-Card">
+                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
+                            <p>Gaze Estimation and Hand Gesture recognition using Camera Vision for navigating and menu selection</p>
+                        </div>
+                        <div className="Card Custom-Card">
+                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
+                            <p>Formal capturing method of photos good for 1X1 and 2X2 photos</p>
+                        </div>
+                        <div className="Card Custom-Card">
+                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
+                            <p>Beauty capturing method of photos good for taking selfie and groupie photos.</p>
+                        </div>
+                    </div>
+                </section>
 
-                <section className="flex flex-wrap flex-row justify-center items-center space-x-6 text-center font-semibold">
-                    <div className="Card Custom-Card">
-                        <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                        <p>Gaze Estimation and Hand Gesture recognition using Camera Vision for navigating and menu selection</p>
+
+
+                <section className="flex flex-col space-y-8">
+                    <div className="flex flex-col justify-center items-center text-[#001D3D] space-y-2">
+                        <p className=" text-5xl font-bold">QuickSnap Business</p>
+                        <p className="text-lg font-semibold">QuickSnap Business is goods for your business.</p>
                     </div>
-                    <div className="Card Custom-Card">
-                        <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                        <p>Formal capturing method of photos good for 1X1 and 2X2 photos</p>
+                    <div className="flex flex-wrap flex-row justify-center items-center space-x-6 text-center font-semibold">
+                        <div className="Card Custom-Card">
+                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
+                            <p>Gaze Estimation and Hand Gesture recognition using Camera Vision for navigating and menu selection</p>
+                        </div>
+                        <div className="Card Custom-Card">
+                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
+                            <p>Formal capturing method of photos good for 1X1 and 2X2 photos</p>
+                        </div>
+                        <div className="Card Custom-Card">
+                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
+                            <p>Beauty capturing method of photos good for taking selfie and groupie photos.</p>
+                        </div>
                     </div>
-                    <div className="Card Custom-Card">
-                        <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                        <p>Beauty capturing method of photos good for taking selfie and groupie photos.</p>
-                    </div>
+
                 </section>
 
                 <section id="download" className="flex flex-col justify-center items-center p-6 space-y-6 bg-[#003566] w-full h-96 text-center text-white">
