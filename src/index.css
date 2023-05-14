@@ -35,5 +35,5 @@
     @apply p-4 text-xl text-white font-semibold rounded-xl hover:bg-[#003566] hover:scale-105 transition duration-200 ease-in-out active:scale-100;
 }
 .Download{
-    @apply px-12 py-4 text-xl font-bold rounded-xl border-2 border-white bg-[#001D3D] hover:scale-105 transition duration-200 ease-in-out active:scale-100;
+    @apply flex items-center px-12 py-4 text-xl font-bold rounded-xl border-2 border-white bg-[#001D3D] hover:scale-105 transition duration-200 ease-in-out active:scale-100;
 }
