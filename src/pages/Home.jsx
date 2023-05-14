@@ -25,33 +25,33 @@ export default function Home() {
             {/* Content */}
             <div className="Content space-y-24 overflow-hidden">
                 <section className="relative flex flex-row justify-center items-center w-full h-[100vh] ">
-                    <div className="absolute w-[900px] z-10 left-16">
-                        <div className="text-left text-6xl text-[#001D3D] font-bold ">
+                    <div className="absolute w-[600px] lg:w-[550px] xl:w-[700px] 2xl:w-[700px] z-10 left-6 2xl:left-16">
+                        <div className="text-left text-5xl 2xl:text-6xl text-[#001D3D] font-bold ">
                             <p>Capture a picture perfect moments with</p>
                             <p><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#ff7200] to-[#ffd40b]">Quick</span><span className="text-transparent bg-clip-text bg-gradient-to-b from-[#56aed6] to-[#064170]">Snap</span>.</p>
                         </div>
-                        <p className="my-6 w-[600px] text-[#001D3D]">Streamlining the process of taking formal and beautify photos in photo booths for students and applicants.</p>
+                        <p className="my-6 w-[400px] text-[#001D3D]">Streamlining the process of taking formal and beautify photos in photo booths for students and applicants.</p>
                     </div>
-                    <img className="absolute right-[-20px] w-auto h-[800px]" src="src/assets/img1.png" />
+                    <img className="hidden lg:block absolute lg:right-[-250px] xl:right-[-120px] 2xl:right-[-20px] w-auto h-[800px]" src="src/assets/img1.png" />
                 </section>
 
                 <section className="flex flex-col space-y-8">
                     <div className="flex flex-col justify-center items-center text-[#001D3D] space-y-2">
-                        <p className=" text-5xl font-bold">QuickSnap Personal</p>
-                        <p className="text-lg font-semibold">QuickSnap Personal is goods for your own use.</p>
+                        <p className="text-5xl md:text-6xl font-bold">QuickSnap Personal</p>
+                        <p className="text-lg md:text-xl font-semibold">QuickSnap Personal is goods for your own use.</p>
                     </div>
-                    <div className="flex flex-wrap flex-row justify-center items-center space-x-6 text-center font-semibold">
+                    <div className="flex flex-wrap flex-row justify-center items-center space-y-8 lg:space-y-0 xl:space-x-6  text-center font-semibold group">
                         <div className="Card Custom-Card">
-                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                            <p>Gaze Estimation and Hand Gesture recognition using Camera Vision for navigating and menu selection</p>
+                            <img className="Card-Img" src="src/assets/gaze.jpg" alt="" />
+                            <p className="Card-P">Gaze Estimation and Hand Gesture recognition using Camera Vision for navigating and menu selection</p>
                         </div>
                         <div className="Card Custom-Card">
-                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                            <p>Formal capturing method of photos good for 1X1 and 2X2 photos</p>
+                            <img className="Card-Img" src="src/assets/formal.jpg" alt="" />
+                            <p className="Card-P">Formal capturing method of photos good for 1X1 and 2X2 photos</p>
                         </div>
                         <div className="Card Custom-Card">
-                            <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                            <p>Beauty capturing method of photos good for taking selfie and groupie photos.</p>
+                            <img className="Card-Img" src="src/assets/beauty.jpg" alt="" />
+                            <p className="Card-P">Beauty capturing method of photos good for taking selfie and groupie photos.</p>
                         </div>
                     </div>
                 </section>
@@ -63,14 +63,7 @@ export default function Home() {
                         <p className=" text-5xl font-bold">QuickSnap Business</p>
                         <p className="text-lg font-semibold">QuickSnap Business is goods for your business.</p>
                     </div>
-                    <div className="Card Custom-Card">
-                        <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                        <p>Formal capturing method of photos good for 1×1 and 2×2 photos</p>
-                    </div>
-                    <div className="Card Custom-Card">
-                        <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
-                        <p>Beauty capturing method of photos good for taking selfie and groupie photos.</p>
-                    <div className="flex flex-wrap flex-row justify-center items-center space-x-6 text-center font-semibold">
+                    <div className="flex flex-wrap flex-row justify-center items-center space-y-8 lg:space-y-0 xl:space-x-6 text-center font-semibold">
                         <div className="Card Custom-Card">
                             <img className="m-4 w-24 h-24" src="src/assets/Logo.png" alt="" />
                             <p>Gaze Estimation and Hand Gesture recognition using Camera Vision for navigating and menu selection</p>
@@ -87,9 +80,9 @@ export default function Home() {
 
                 </section>
 
-                <section id="download" className="flex flex-col justify-center items-center p-6 space-y-6 bg-[#003566] w-full h-96 text-center text-white">
+                <section id="download" className="flex flex-col justify-center items-center p-6 space-y-6 bg-[#003566] w-full h-auto text-center text-white">
                     <p className="text-3xl font-bold italic">"QuickSnap, Capturing the best moments in your life."</p>
-                    <p className="w-[900px]">QuickSnap is a computer vision-based application that leverages advanced techniques such as gaze estimation, palm tracking, and smile capture to create a seamless and efficient photo-capturing experience. By utilizing these cutting-edge technologies, QuickSnap eliminates the need for users to navigate through complicated menus and settings, making the photo-taking process quick and effortless.</p>
+                    <p className="lg:w-[900px]">QuickSnap is a computer vision-based application that leverages advanced techniques such as gaze estimation, palm tracking, and smile capture to create a seamless and efficient photo-capturing experience. By utilizing these cutting-edge technologies, QuickSnap eliminates the need for users to navigate through complicated menus and settings, making the photo-taking process quick and effortless.</p>
                     <p className="text-2xl font-bold">Download QuickSnap: </p>
                     <div className="flex space-x-4">
                         <a className="Download" href="src/download/QuickSnap-Personal.txt" download="QuickSnap_Personal_v1.0">Personal</a>
@@ -100,12 +93,12 @@ export default function Home() {
             {/* End Content */}
 
             {/* Footer */}
-            <footer className="flex justify-center items-center space-x-16 p-6 w-full h-auto bg-[#001D3D] ">
+            <footer className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-x-16 p-6 w-full h-auto bg-[#001D3D] ">
                 <div className="flex flex-row items-center">
                     <img className="mr-4 w-auto h-16" src="src/assets/Logo.png" alt="" />
                     <img className="w-auto h-12" src="src/assets/Banner.png" alt="" />
                 </div>
-                <p className="text-gray-300 text-lg font-semibold">© 2023 QuickSnap. All Rights Reserved.</p>
+                <p className="text-gray-300 text-lg lg:text-center font-semibold">© 2023 QuickSnap. All Rights Reserved.</p>
                 <div className="text-gray-300">
                     <p className="text-sm  font-semibold">Developed by:</p>
                     <p className="text-2xl font-bold">BSCS4B - Bonadults</p>
